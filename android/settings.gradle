@@ -1,0 +1,3 @@
+rootProject.name = 'Optimize'
+
+include ':app'
