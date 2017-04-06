@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import styles from './style';
 
-export default class Container extends Component {
+export default class NavBar extends Component {
 
     render(){
         return (

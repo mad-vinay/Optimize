@@ -7,6 +7,8 @@ export default StyleSheet.create({
 		padding: 50,
 		flexDirection: 'column',
 		height: HEIGHT,
+		justifyContent: 'center',
+		paddingTop: 0
 	},
 	textInput: {
 	    height: 50,
@@ -40,17 +42,6 @@ export default StyleSheet.create({
 	headerText: {
 		color: '#fff',
 		fontSize: 10
-	},
-	header: {
-  		flexDirection: 'row',
-		justifyContent: 'space-between',
-        alignItems: 'center',
-        height: 40,
-        padding: 10,
-        backgroundColor: '#293334',
-        borderBottomColor: '#46575a',
-        borderStyle: 'solid',
-        borderWidth: 1,
 	},
 	remembermeTextWrap: {
 		flexDirection: 'row',

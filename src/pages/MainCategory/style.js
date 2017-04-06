@@ -5,8 +5,6 @@ export default StyleSheet.create({
     wrapper: {
         backgroundColor: '#303B3D',
         flexDirection: 'column',
-        height: HEIGHT,
-        justifyContent: 'center'
     },
     transparentButton: {
         borderColor: '#ff9f02',
@@ -17,9 +15,6 @@ export default StyleSheet.create({
         borderWidth: 0,
         margin: 0,
         padding: 0,
-        height: 20,
-        width: 100,
-        zIndex: 1,
     },
     buttonText: {
         fontSize: 12,
@@ -34,13 +29,12 @@ export default StyleSheet.create({
         marginBottom: 30,
     },
     imageWrapper: {
-        padding: 30,
+        justifyContent: 'center',
+        padding: 50,
+        height: HEIGHT,
+        paddingTop: 0
     },
     navWrapper: {
         justifyContent: 'flex-end',
     },
-    navItem: {
-        fontSize: 12,
-        color: '#ff9f02',
-    }
 });

@@ -14,7 +14,7 @@ import {
 import styles from './style';
 
 export default class extends Component {
-		onPress = () => {
+	onPress = () => {
 		const { navigator } = this.props;
 		navigator.push({
 		  id: 'Login'
@@ -24,7 +24,7 @@ export default class extends Component {
         return (
         <View style={styles.wrapper}>
         	<NavBar styles={styles.navWrapper}>
-        	<Button textColor='#ff9f02'styles={styles.logoutButton} onPress = { this.onPress } label="Logout"/>
+        		<Button textColor='#ff9f02' styles={styles.logoutButton} onPress = { this.onPress } label="Logout"/>
 		    </NavBar>
 		    <View style={styles.imageWrapper}>
 		        <View style={styles.imageContainer}>
