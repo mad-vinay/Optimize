@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from '../../components/Container';
 import Button from '../../components/Button';
 
+
 import {
   StyleSheet,
   Text,
@@ -55,7 +56,7 @@ export default class Login extends Component {
 					    <Text style={styles.rememberText}>Remember Password</Text>
 					</Container>
 					<Container>
-					    <Button 
+					    <Button
 					        styles={styles.transparentButton}
 					        onPress = { this.onPress }
 					    >
