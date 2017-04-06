@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container';
 import Button from '../../components/Button';
+import Ticker from '../../components/Ticker';
 
 import {
   StyleSheet,
@@ -42,7 +43,10 @@ export default class Login extends Component {
 					        underlineColorAndroid='transparent'
 					        placeholderTextColor="grey"
 					    />
-					    <Text style={styles.rememberText}>Remember Email</Text>
+					    <View style={styles.remembermeTextWrap}>
+						    <Text style={styles.rememberText}>Remember Email</Text>
+						    <Ticker/>
+						</View>
 					</Container>
 					<Container>
 					    <TextInput
@@ -52,7 +56,10 @@ export default class Login extends Component {
 					        underlineColorAndroid='transparent'
 					        placeholderTextColor="grey"
 					    />
-					    <Text style={styles.rememberText}>Remember Password</Text>
+					    <View style={styles.remembermeTextWrap}>
+					    	<Text style={styles.rememberText}>Remember Password</Text>
+					        <Ticker/>
+						</View>
 					</Container>
 					<Container>
 					    <Button 

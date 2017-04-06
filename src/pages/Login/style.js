@@ -4,7 +4,7 @@ const HEIGHT = Dimensions.get('window').height;
 export default StyleSheet.create({
 	scroll: {
 		backgroundColor: '#303B3D',
-		padding: 30,
+		padding: 50,
 		flexDirection: 'column',
 		height: HEIGHT,
 	},
@@ -35,7 +35,6 @@ export default StyleSheet.create({
         marginBottom: 30
 	},
 	rememberText: {
-		marginTop: 15,
 		color: '#fff'
 	},
 	headerText: {
@@ -50,5 +49,13 @@ export default StyleSheet.create({
         padding: 10,
         backgroundColor: '#293334',
         borderBottomColor: '#46575a',
+        borderStyle: 'solid',
+        borderWidth: 1,
+	},
+	remembermeTextWrap: {
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+        alignItems: 'center',
+        marginTop: 10
 	}
 });

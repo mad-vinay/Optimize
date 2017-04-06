@@ -4,7 +4,7 @@ const HEIGHT = Dimensions.get('window').height;
 export default StyleSheet.create({
 	wrapper: {
 		backgroundColor: '#303B3D',
-		padding: 30,
+		padding: 50,
 		flexDirection: 'column',
 		height: HEIGHT,
 		justifyContent: 'center'
