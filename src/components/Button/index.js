@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
- 
+
 import {
   StyleSheet,
   Text,
@@ -22,20 +22,21 @@ export default class Button extends Component {
         })
         this.props.onPress && this.props.onPress();
     };
-     
+
     getContent(){
         if(this.props.children){
             return this.props.children;
         }
-        return <Text style={[this.props.styles.label, {color: this.state.buttonTextColor}]}>{this.props.label}</Text>
+        return <Text style={[this.props.styles.label, {color: [
+                    this.props.textColor ? this.props.textColor : this.state.buttonTextColor]}]}>{this.props.label}</Text>
     }
-    
+
     render(){
         return (
-            <TouchableHighlight 
-                onPress={this.btnPress} 
+            <TouchableHighlight
+                onPress={this.btnPress}
                 style={[
-                    this.props.noDefaultStyles ? '' : styles.button, 
+                    this.props.noDefaultStyles ? '' : styles.button,
                     this.props.styles ? this.props.styles : '']}
             >
                 { this.getContent() }
@@ -44,4 +45,3 @@ export default class Button extends Component {
     }
 }
 
- 
