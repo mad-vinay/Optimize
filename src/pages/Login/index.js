@@ -3,6 +3,7 @@ import Container from '../../components/Container';
 import Button from '../../components/Button';
 import Ticker from '../../components/Ticker';
 
+
 import {
   StyleSheet,
   Text,
@@ -62,7 +63,7 @@ export default class Login extends Component {
 						</View>
 					</Container>
 					<Container>
-					    <Button 
+					    <Button
 					        styles={styles.transparentButton}
 					        onPress = { this.onPress }
 					    >
