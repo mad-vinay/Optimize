@@ -4,12 +4,13 @@ import {
 	AppRegistry,
 	Navigator
 } from 'react-native';
- 
+
 import Login from './src/pages/Login';
 import MainCategory from './src/pages/MainCategory';
- 
+import ManageCase from './src/pages/ManageCase';
+ import Button from './src/components/Button';
 export default class Optimize extends Component {
- 
+
 render() {
 
     return (
@@ -25,12 +26,19 @@ render() {
       return (
         <Login navigator={navigator}/>
       );
-    } else if (route.id === 'MainCategory') {
+    }
+   if (route.id === 'ManageCase') {
+      return (
+        <ManageCase navigator={navigator}/>
+      );
+    }
+    else if (route.id === 'MainCategory') {
       return (
         <MainCategory navigator={navigator}/>
       );
     }
+
   }
 }
- 
+
 AppRegistry.registerComponent('Optimize', () => Optimize);

@@ -15,13 +15,6 @@ import {
 import styles from './style';
 
 export default class Login extends Component {
-	onPress = () => {
-		const { navigator } = this.props;
-		navigator.push({
-		  id: 'MainCategory'
-		});
-	}
-
 	render() {
 	    return (
 
@@ -65,7 +58,7 @@ export default class Login extends Component {
 					<Container>
 					    <Button
 					        styles={styles.transparentButton}
-					        onPress = { this.onPress }
+					        navigator={this.props.navigator} id='MainCategory'
 					    >
 					        <Text style={styles.buttonText}>Login</Text>
 					    </Button>

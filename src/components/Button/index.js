@@ -8,7 +8,7 @@ import {
 import styles from './style';
 
 export default class Button extends Component {
-
+    navigator = this.props.navigator;
     constructor(props) {
         super(props);
         this.state = {
@@ -22,6 +22,15 @@ export default class Button extends Component {
         })
         this.props.onPress && this.props.onPress();
     };
+    onPress = (id) => {
+        this.setState({
+            buttonTextColor: '#ff9f02',
+        })
+
+        this.navigator.push({
+          id: this.props.id
+        });
+    }
 
     getContent(){
         if(this.props.children){
@@ -34,7 +43,7 @@ export default class Button extends Component {
     render(){
         return (
             <TouchableHighlight
-                onPress={this.btnPress}
+                onPress={this.onPress}
                 style={[
                     this.props.noDefaultStyles ? '' : styles.button,
                     this.props.styles ? this.props.styles : '']}
