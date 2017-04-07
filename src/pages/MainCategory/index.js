@@ -14,17 +14,17 @@ import {
 import styles from './style';
 
 export default class extends Component {
-	onPress = () => {
+	onPress = (id) => {
 		const { navigator } = this.props;
 		navigator.push({
-		  id: 'Login'
+		  id: this.props.id
 		});
 	}
     render() {
         return (
         <View style={styles.wrapper}>
         	<NavBar styles={styles.navWrapper}>
-        		<Button textColor='#ff9f02' styles={styles.logoutButton} onPress = { this.onPress } label="Logout"/>
+        		<Button navigator={this.props.navigator} onPress = { this.onPress } id='Login'  textColor='#ff9f02' styles={styles.logoutButton} label="Logout"/>
 		    </NavBar>
 		    <View style={styles.imageWrapper}>
 		        <View style={styles.imageContainer}>
@@ -34,9 +34,8 @@ export default class extends Component {
 			        />
 			     </View>
 		        <Container>
-				    <Button
+				    <Button navigator={this.props.navigator} onPress = { this.onPress } id='ManageCase'
 				        styles={styles.transparentButton}
-				        onPress = { this.btnPress }
 				        label="Manage Cases"
 				    />
 				</Container>
