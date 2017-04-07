@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Container from '../../components/Container';
-import Button from '../../components/Button';
+import TouchableHighlightBtn from '../../components/TouchableHighlightBtn';
 import Ticker from '../../components/Ticker';
 import NavBar from '../../components/NavBar';
 
@@ -56,12 +56,12 @@ export default class Login extends Component {
 						</View>
 					</Container>
 					<Container>
-					    <Button
+					    <TouchableHighlightBtn
 					        styles={styles.transparentButton}
 					        navigator={this.props.navigator} id='MainCategory'
 					    >
 					        <Text style={styles.buttonText}>Login</Text>
-					    </Button>
+					    </TouchableHighlightBtn>
 					</Container>
 		        </View>
 		    </View>

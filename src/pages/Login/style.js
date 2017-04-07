@@ -8,15 +8,18 @@ export default StyleSheet.create({
 		flexDirection: 'column',
 		height: HEIGHT,
 		justifyContent: 'center',
-		paddingTop: 0
+		paddingTop: 0,
+		paddingLeft: 120,
+		paddingRight: 120
 	},
 	textInput: {
 	    height: 50,
-	    fontSize: 20,
+	    fontSize: 16,
 	    color: '#fff',
 	    borderColor: '#ADD8E6',
 	    borderWidth: 1,
-	    borderRadius: 5
+	    borderRadius: 5,
+	    height: 42
 	},
 	transparentButton: {
 	    marginTop: 30,
