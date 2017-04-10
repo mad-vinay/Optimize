@@ -12,32 +12,21 @@ export default StyleSheet.create({
         borderRadius: 5,
         height: 45
     },
-    logoutButton: {
-        borderWidth: 0,
-        margin: 0,
-        padding: 0,
-        color: '#ff9f02'
-    },
-    buttonText: {
-        fontSize: 12,
-        color: '#fff',
-    },
-    logo: {
-        width: 200,
-        height: 50
-    },
-    imageContainer: {
-        alignItems: 'center',
-        marginBottom: 30,
-    },
     imageWrapper: {
         justifyContent: 'center',
         padding: 50,
         height: HEIGHT,
         paddingTop: 0,
-
+        paddingLeft: 120,
+        paddingRight: 120
     },
     navWrapper: {
-        justifyContent: 'flex-end',
+        textAlign: 'center'
     },
+    logoutButton: {
+        justifyContent: 'flex-start',
+    },
+    headingText: {
+        color: "#fff"
+    }
 });

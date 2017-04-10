@@ -8,7 +8,8 @@ import {
 import Login from './src/pages/Login';
 import MainCategory from './src/pages/MainCategory';
 import ManageCase from './src/pages/ManageCase';
- import Button from './src/components/Button';
+import Preferences from './src/pages/Preferences';
+import TouchableHighlightBtn from './src/components/TouchableHighlightBtn';
 export default class Optimize extends Component {
 
 render() {
@@ -35,6 +36,11 @@ render() {
     else if (route.id === 'MainCategory') {
       return (
         <MainCategory navigator={navigator}/>
+      );
+    }
+    else if (route.id === 'Preferences') {
+      return (
+        <Preferences navigator={navigator}/>
       );
     }
 

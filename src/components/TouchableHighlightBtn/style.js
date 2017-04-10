@@ -1,12 +1,9 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 15,
+        height: 50,
     },
-    label: {
-        fontSize: 16,
-    }
 });

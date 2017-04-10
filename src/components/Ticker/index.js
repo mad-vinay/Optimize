@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  TouchableHighlight,
+  TouchableOpacity,
   Image
 } from 'react-native';
 import styles from './style';
@@ -29,12 +29,12 @@ export default class Ticker extends Component {
     	const imageUrl=this.state.selected==true? require('../../images/check-orange.png') :require('../../images/check.png')
         
         return (
-            <TouchableHighlight onPress={this._onPressButton}>
+            <TouchableOpacity onPress={this._onPressButton}>
 		      <Image
 		      	style={styles.tickImg}
 		        source={imageUrl}
 		      />
-		    </TouchableHighlight>
+		    </TouchableOpacity>
         );
     }
 }

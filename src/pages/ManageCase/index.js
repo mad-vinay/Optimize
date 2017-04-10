@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from '../../components/NavBar';
-import Button from '../../components/Button';
+import TouchableOpacityBtn from '../../components/TouchableOpacityBtn';
 import Calender from '../../components/Calender';
 import {
   StyleSheet,
@@ -17,8 +17,8 @@ export default class ManageCase extends Component {
         return (
         <View style={styles.wrapper}>
           <NavBar styles={styles.navWrapper}>
-              <Button navigator={this.props.navigator} onPress = { this.onPress } id='Login'  textColor='#ff9f02' styles={styles.logoutButton} label="< Back"/>
-              <Button navigator={this.props.navigator} onPress = { this.onPress } id='Login'  textColor='#ff9f02' styles={styles.logoutButton} label="Logout"/>
+              <TouchableOpacityBtn navigator={this.props.navigator} onPress = { this.onPress } id='MainCategory' label="< Back"/>
+              <TouchableOpacityBtn navigator={this.props.navigator} onPress = { this.onPress } id='Login' label="Logout"/>
           </NavBar>
           <Calender/>
         </View>
