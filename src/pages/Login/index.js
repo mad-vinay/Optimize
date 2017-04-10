@@ -6,15 +6,16 @@ import NavBar from '../../components/NavBar';
 import TextBox from '../../components/TextBox';
 
 import {
-  StyleSheet,
   Text,
   View,
   TextInput,
   Image,
+  TouchableOpacity
 } from 'react-native';
 import styles from './style';
 
 export default class Login extends Component {
+
 	render() {
 	    return (
 
@@ -25,26 +26,29 @@ export default class Login extends Component {
 			    </NavBar>
 		        <View style={styles.scroll}>
 			        <View style={styles.imageContainer}>
-			        	<Image
-							style={styles.logo}
-							source={require('../../images/Optimize-logo.png')}
-				        />
+			        	<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
 				     </View>
-				     <TextBox placeholder = 'Email'/>
+				     <TextBox placeholder = 'Email' secureTextEntry={false} >
+				     	<TouchableOpacity style={styles.clearBtn}>
+							<Image style={styles.clearIcon} source={require('../../images/clear-icon.png')}/>
+					 	</TouchableOpacity>
+					 </TextBox>
 				     <View style={styles.remembermeTextWrap}>
-						    <Text style={styles.rememberText}>Remember Email</Text>
-						    <Ticker/>
-						</View>
-				     <TextBox placeholder = 'Password'/>
+						<Text style={styles.rememberText}>Remember Email</Text>
+						<Ticker/>
+					</View>
+				     <TextBox placeholder = 'Password' secureTextEntry={true} >
+				     	<TouchableOpacity style={styles.clearBtn}>
+				    		<Image style={styles.clearIcon} source={require('../../images/clear-icon.png')}/>
+					 	</TouchableOpacity>
+					 </TextBox>
 				     <View style={styles.remembermeTextWrap}>
-					    	<Text style={styles.rememberText}>Remember Password</Text>
-					        <Ticker/>
-						</View>
-					    <TouchableHighlightBtn
-					        styles={styles.transparentButton}
-					        navigator={this.props.navigator} id='MainCategory'>
-					        <Text style={styles.buttonText}>Login</Text>
-					    </TouchableHighlightBtn>
+					    <Text style={styles.rememberText}>Remember Password</Text>
+					     <Ticker/>
+					</View>
+					<TouchableHighlightBtn styles={styles.transparentButton} navigator={this.props.navigator} id='MainCategory'>
+					    <Text style={styles.buttonText}>Login</Text>
+					</TouchableHighlightBtn>
 		        </View>
 		    </View>
 	    );

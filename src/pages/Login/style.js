@@ -39,7 +39,7 @@ export default StyleSheet.create({
     rememberText: {
         color: '#ccc',
         fontSize: 12,
-        fontWeight:'normal'
+        fontWeight: 'normal'
     },
     headerText: {
         color: '#fff',
@@ -51,5 +51,20 @@ export default StyleSheet.create({
         alignItems: 'center',
         marginTop: 10,
         marginBottom: 10,
+    },
+    header: {
+        justifyContent: 'space-between',
+    },
+    clearIcon: {
+        width: 19,
+        height: 19
+    },
+    clearBtn: {
+        position: 'absolute',
+        right: 5,
+        top: 11,
+    },
+    textInputWrap: {
+        position: 'relative',
     }
 });
