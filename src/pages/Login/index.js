@@ -3,18 +3,19 @@ import Container from '../../components/Container';
 import TouchableHighlightBtn from '../../components/TouchableHighlightBtn';
 import Ticker from '../../components/Ticker';
 import NavBar from '../../components/NavBar';
-
+import TextBox from '../../components/TextBox';
 
 import {
-  StyleSheet,
   Text,
   View,
   TextInput,
   Image,
+  TouchableOpacity
 } from 'react-native';
 import styles from './style';
 
 export default class Login extends Component {
+
 	render() {
 	    return (
 
@@ -25,44 +26,21 @@ export default class Login extends Component {
 			    </NavBar>
 		        <View style={styles.scroll}>
 			        <View style={styles.imageContainer}>
-			        	<Image
-							style={styles.logo}
-							source={require('../../images/Optimize-logo.png')}
-				        />
+			        	<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
 				     </View>
-			        <Container style={styles.containerstyle}>
-					    <TextInput
-					        style={styles.textInput}
-					        placeholder = 'Email'
-					        underlineColorAndroid='transparent'
-					        placeholderTextColor="grey"
-					    />
-					    <View style={styles.remembermeTextWrap}>
-						    <Text style={styles.rememberText}>Remember Email</Text>
-						    <Ticker/>
-						</View>
-					</Container>
-					<Container>
-					    <TextInput
-					        secureTextEntry={true}
-					        style={styles.textInput}
-					        placeholder = 'Password'
-					        underlineColorAndroid='transparent'
-					        placeholderTextColor="grey"
-					    />
-					    <View style={styles.remembermeTextWrap}>
-					    	<Text style={styles.rememberText}>Remember Password</Text>
-					        <Ticker/>
-						</View>
-					</Container>
-					<Container>
-					    <TouchableHighlightBtn
-					        styles={styles.transparentButton}
-					        navigator={this.props.navigator} id='MainCategory'
-					    >
-					        <Text style={styles.buttonText}>Login</Text>
-					    </TouchableHighlightBtn>
-					</Container>
+				     <TextBox placeholder = 'Email' secureTextEntry={false} showClearButton={true}></TextBox>
+				     <View style={styles.remembermeTextWrap}>
+						<Text style={styles.rememberText}>Remember Email</Text>
+						<Ticker/>
+					</View>
+				     <TextBox placeholder = 'Password' secureTextEntry={true} showClearButton={true}></TextBox>
+				     <View style={styles.remembermeTextWrap}>
+					    <Text style={styles.rememberText}>Remember Password</Text>
+					     <Ticker/>
+					</View>
+					<TouchableHighlightBtn styles={styles.transparentButton} navigator={this.props.navigator} id='MainCategory'>
+					    <Text style={styles.buttonText}>Login</Text>
+					</TouchableHighlightBtn>
 		        </View>
 		    </View>
 	    );
