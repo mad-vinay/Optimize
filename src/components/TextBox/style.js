@@ -24,4 +24,13 @@ export default StyleSheet.create({
         width:230,
         fontSize:16,
     },
+    clearIcon: {
+        width: 19,
+        height: 19
+    },
+    clearBtn: {
+        position: 'absolute',
+        right: 5,
+        top: 11,
+    },
 });

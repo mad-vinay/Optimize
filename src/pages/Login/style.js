@@ -55,16 +55,5 @@ export default StyleSheet.create({
     header: {
         justifyContent: 'space-between',
     },
-    clearIcon: {
-        width: 19,
-        height: 19
-    },
-    clearBtn: {
-        position: 'absolute',
-        right: 5,
-        top: 11,
-    },
-    textInputWrap: {
-        position: 'relative',
-    }
 });
+

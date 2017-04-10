@@ -28,20 +28,12 @@ export default class Login extends Component {
 			        <View style={styles.imageContainer}>
 			        	<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
 				     </View>
-				     <TextBox placeholder = 'Email' secureTextEntry={false} >
-				     	<TouchableOpacity style={styles.clearBtn}>
-							<Image style={styles.clearIcon} source={require('../../images/clear-icon.png')}/>
-					 	</TouchableOpacity>
-					 </TextBox>
+				     <TextBox placeholder = 'Email' secureTextEntry={false} showClearButton={true}></TextBox>
 				     <View style={styles.remembermeTextWrap}>
 						<Text style={styles.rememberText}>Remember Email</Text>
 						<Ticker/>
 					</View>
-				     <TextBox placeholder = 'Password' secureTextEntry={true} >
-				     	<TouchableOpacity style={styles.clearBtn}>
-				    		<Image style={styles.clearIcon} source={require('../../images/clear-icon.png')}/>
-					 	</TouchableOpacity>
-					 </TextBox>
+				     <TextBox placeholder = 'Password' secureTextEntry={true} showClearButton={true}></TextBox>
 				     <View style={styles.remembermeTextWrap}>
 					    <Text style={styles.rememberText}>Remember Password</Text>
 					     <Ticker/>
