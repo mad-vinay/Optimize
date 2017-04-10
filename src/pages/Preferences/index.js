@@ -20,7 +20,7 @@ export default class Preferences extends Component {
           <NavBar styles={styles.navWrapper}>
             <TouchableOpacityBtn 
               navigator={this.props.navigator}
-              onPress = { this.onPress } id='Login' 
+              onPress = { this.onPress } id='MainCategory' 
               styles={styles.logoutButton} 
               label="< Back"/>
             <Text style={styles.headingText} >Preferences</Text>

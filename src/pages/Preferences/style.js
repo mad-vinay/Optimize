@@ -20,13 +20,7 @@ export default StyleSheet.create({
         paddingLeft: 120,
         paddingRight: 120
     },
-    navWrapper: {
-        textAlign: 'center'
-    },
-    logoutButton: {
-        justifyContent: 'flex-start',
-    },
     headingText: {
         color: "#fff"
-    }
+    },
 });

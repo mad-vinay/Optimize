@@ -11,10 +11,16 @@ import {
   View,
   TextInput,
   Image,
+  TouchableOpacity
 } from 'react-native';
 import styles from './style';
 
 export default class Login extends Component {
+
+	clearText(fieldName) {
+		this.refs[fieldName].setNativeProps({text: ''});
+	}
+
 	render() {
 	    return (
 
@@ -31,25 +37,43 @@ export default class Login extends Component {
 				        />
 				     </View>
 			        <Container style={styles.containerstyle}>
-					    <TextInput
-					        style={styles.textInput}
-					        placeholder = 'Email'
-					        underlineColorAndroid='transparent'
-					        placeholderTextColor="grey"
-					    />
+				        <View style={styles.textInputWrap}>
+						    <TextInput
+						        style={styles.textInput}
+						        placeholder = 'Email'
+						        underlineColorAndroid='transparent'
+						        placeholderTextColor="grey"
+						        ref={'textInput1'}
+						    />
+						    <TouchableOpacity style={styles.clearBtn} onPress={() => this.clearText('textInput1')}>
+								<Image
+									style={styles.clearIcon}
+									source={require('../../images/clear-icon.png')}
+					        	/>
+					        </TouchableOpacity>
+					    </View>
 					    <View style={styles.remembermeTextWrap}>
 						    <Text style={styles.rememberText}>Remember Email</Text>
 						    <Ticker/>
 						</View>
 					</Container>
 					<Container>
-					    <TextInput
-					        secureTextEntry={true}
-					        style={styles.textInput}
-					        placeholder = 'Password'
-					        underlineColorAndroid='transparent'
-					        placeholderTextColor="grey"
-					    />
+						<View style={styles.textInputWrap}>
+						    <TextInput
+						        secureTextEntry={true}
+						        style={styles.textInput}
+						        placeholder = 'Password'
+						        underlineColorAndroid='transparent'
+						        placeholderTextColor="grey"
+						        ref={'textInput2'}
+						    />
+						    <TouchableOpacity style={styles.clearBtn} onPress={() => this.clearText('textInput2')}>
+					          <Image
+									style={styles.clearIcon}
+									source={require('../../images/clear-icon.png')}
+					        	/>
+					        </TouchableOpacity>
+					    </View>
 					    <View style={styles.remembermeTextWrap}>
 					    	<Text style={styles.rememberText}>Remember Password</Text>
 					        <Ticker/>
