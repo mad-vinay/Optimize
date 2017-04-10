@@ -4,6 +4,9 @@ export default StyleSheet.create({
     button: {
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 15
+        padding: 15,
     },
+    label: {
+        fontSize: 16,
+    }
 });

@@ -12,9 +12,11 @@ import {
 import styles from './style';
 
 export default class TextBox extends Component {
+
   clearText() {
     this.refs['textInput'].setNativeProps({text: ''});
   }
+
 
   render() {
     return (
@@ -34,3 +36,4 @@ export default class TextBox extends Component {
     );
   }
 }
+

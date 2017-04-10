@@ -35,8 +35,7 @@ export default StyleSheet.create({
         padding: 50,
         height: HEIGHT,
         paddingTop: 0,
-        paddingLeft: 120,
-        paddingRight: 120
+
     },
     navWrapper: {
         justifyContent: 'flex-end',
