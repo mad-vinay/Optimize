@@ -28,10 +28,10 @@ export default class TextBox extends Component {
           placeholderTextColor="#a9a9a9"
           secureTextEntry={this.props.secureTextEntry}
           ref={'textInput'}/>
-            {this.props.showClearButton && 
+            { this.props.showClearButton && 
               <TouchableOpacity style={styles.clearBtn} onPress={() => this.clearText()}>
                 <Image style={styles.clearIcon} source={require('../../images/clear-icon.png')}/>
-            </TouchableOpacity>}
+              </TouchableOpacity>}
       </View>
     );
   }

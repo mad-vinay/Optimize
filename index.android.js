@@ -9,6 +9,7 @@ import Login from './src/pages/Login';
 import MainCategory from './src/pages/MainCategory';
 import ManageCase from './src/pages/ManageCase';
 import Preferences from './src/pages/Preferences';
+import SetInfo from './src/pages/SetInfo';
 export default class Optimize extends Component {
 
 render() {
@@ -27,7 +28,7 @@ render() {
         <Login navigator={navigator}/>
       );
     }
-   if (route.id === 'ManageCase') {
+    else if (route.id === 'ManageCase') {
       return (
         <ManageCase navigator={navigator}/>
       );
@@ -42,7 +43,11 @@ render() {
         <Preferences navigator={navigator}/>
       );
     }
-
+    else if (route.id === 'SetInfo') {
+      return (
+        <SetInfo navigator={navigator}/>
+      );
+    }
   }
 }
 

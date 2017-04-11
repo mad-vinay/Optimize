@@ -8,7 +8,6 @@ import TextBox from '../../components/TextBox';
 import {
   Text,
   View,
-  TextInput,
   Image,
   TouchableOpacity
 } from 'react-native';
@@ -19,27 +18,27 @@ export default class Login extends Component {
 	render() {
 	    return (
 
-	    	<View>
+	    	<View style={styles.scrollv}>
 		    	<NavBar style={styles.header}>
 	        		<Text style={styles.headerText}>v3.4</Text>
 		    		<Text style={styles.headerText}>T000v34-DFW1</Text>
 			    </NavBar>
 		        <View style={styles.scroll}>
-			        <View style={styles.imageContainer}>
-			        	<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
-				     </View>
-				     <TextBox placeholder = 'Email' secureTextEntry={false} showClearButton={true}></TextBox>
-				     <View style={styles.remembermeTextWrap}>
+					<View style={styles.imageContainer}>
+						<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
+					</View>
+					<TextBox placeholder = 'Email' secureTextEntry={false} showClearButton={true}></TextBox>
+					<View style={styles.remembermeTextWrap}>
 						<Text style={styles.rememberText}>Remember Email</Text>
 						<Ticker/>
 					</View>
-				     <TextBox placeholder = 'Password' secureTextEntry={true} showClearButton={true}></TextBox>
-				     <View style={styles.remembermeTextWrap}>
-					    <Text style={styles.rememberText}>Remember Password</Text>
-					     <Ticker/>
+					<TextBox placeholder = 'Password' secureTextEntry={true} showClearButton={true}></TextBox>
+					<View style={styles.remembermeTextWrap}>
+						<Text style={styles.rememberText}>Remember Password</Text>
+						<Ticker/>
 					</View>
 					<TouchableHighlightBtn styles={styles.transparentButton} navigator={this.props.navigator} id='MainCategory'>
-					    <Text style={styles.buttonText}>Login</Text>
+						<Text style={styles.buttonText}>Login</Text>
 					</TouchableHighlightBtn>
 		        </View>
 		    </View>
