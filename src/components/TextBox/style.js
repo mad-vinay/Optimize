@@ -1,7 +1,8 @@
 /**
  * Info Style sheet
  */
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+const WIDTH = Dimensions.get('window').width;
 
 export default StyleSheet.create({
 
@@ -12,7 +13,7 @@ export default StyleSheet.create({
         paddingRight: 5,
         paddingLeft: 5,
         borderColor: '#748d92',
-        borderRadius: 10,
+        borderRadius: 5,
         borderWidth: 1,
     },
     form_items: {

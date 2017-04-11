@@ -46,7 +46,7 @@ export default class extends Component {
 				    />
 				</Container>
 				<Container>
-				    <TouchableHighlightBtn
+				    <TouchableHighlightBtn navigator={this.props.navigator} onPress = { this.onPress } id='SetInfo'
 				        styles={styles.transparentButton}
 				        onPress = { this.btnPress }
 				        label="Set Info"

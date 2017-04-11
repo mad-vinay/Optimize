@@ -22,7 +22,7 @@ export default StyleSheet.create({
     headingText: {
         color: "#fff",
         position: 'absolute',
-        left: WIDTH/2-36,
+        left: WIDTH/2-20,
         right: 0,
         justifyContent: 'center',
         alignItems: 'center'

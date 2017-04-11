@@ -1,22 +1,15 @@
 import { StyleSheet, Dimensions } from 'react-native';
 const HEIGHT = Dimensions.get('window').height;
+const WIDTH = Dimensions.get('window').width;
 
 export default StyleSheet.create({
     scroll: {
         backgroundColor: '#303B3D',
         padding: 50,
         flexDirection: 'column',
-        height: HEIGHT,
+        height: HEIGHT-60,
         justifyContent: 'center',
-        paddingTop: 0
-    },
-    textInput: {
-        height: 50,
-        fontSize: 20,
-        color: '#fff',
-        borderColor: '#ADD8E6',
-        borderWidth: 1,
-        borderRadius: 5
+        width: WIDTH
     },
     transparentButton: {
         marginTop: 30,
