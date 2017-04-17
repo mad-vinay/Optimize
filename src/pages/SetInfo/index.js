@@ -39,6 +39,6 @@ export default class SetInfo extends Component {
             </Container>
           </View>
         </View>
-        );
+      );
     }
 }

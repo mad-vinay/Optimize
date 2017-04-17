@@ -27,7 +27,9 @@ export default class Preferences extends Component {
           </NavBar>
           <View style={styles.imageWrapper}>
             <Container>
-              <TouchableHighlightBtn
+              <TouchableHighlightBtn 
+                  navigator={this.props.navigator} 
+                  onPress = { this.onPress } id='AddPreference'
                   styles={styles.transparentButton}
                   label="Add Preferences"
               />
