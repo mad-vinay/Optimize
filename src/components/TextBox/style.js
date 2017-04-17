@@ -5,7 +5,6 @@ import { StyleSheet, Dimensions } from 'react-native';
 const WIDTH = Dimensions.get('window').width;
 
 export default StyleSheet.create({
-
     loginform: {
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -19,11 +18,8 @@ export default StyleSheet.create({
     form_items: {
         alignSelf: 'stretch',
         color: '#fff',
-        borderColor: '#748d92',
-        borderRadius: 5,
-        height:42,
-        width:230,
-        fontSize:16,
+        height: 42,
+        fontSize: 16,
     },
     clearIcon: {
         width: 19,
