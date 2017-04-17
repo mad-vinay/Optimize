@@ -16,10 +16,10 @@ export default class SetInfo extends Component {
         return (
        <View style={styles.wrapper}>
           <NavBar styles={styles.navWrapper}>
-            <TouchableOpacityBtn 
+            <TouchableOpacityBtn
               navigator={this.props.navigator}
-              onPress = { this.onPress } id='MainCategory' 
-              styles={styles.logoutButton} 
+              onPress = { this.onPress } id='MainCategory'
+              styles={styles.logoutButton}
               label="< Back"/>
             <Text style={styles.headingText} >Set Info</Text>
           </NavBar>
