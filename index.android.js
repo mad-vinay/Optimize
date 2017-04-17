@@ -10,6 +10,7 @@ import MainCategory from './src/pages/MainCategory';
 import ManageCase from './src/pages/ManageCase';
 import Preferences from './src/pages/Preferences';
 import SetInfo from './src/pages/SetInfo';
+import AddPreference from './src/pages/AddPreference';
 export default class Optimize extends Component {
 
 render() {
@@ -46,6 +47,11 @@ render() {
     else if (route.id === 'SetInfo') {
       return (
         <SetInfo navigator={navigator}/>
+      );
+    }
+    else if (route.id === 'AddPreference') {
+      return (
+        <AddPreference navigator={navigator}/>
       );
     }
   }
