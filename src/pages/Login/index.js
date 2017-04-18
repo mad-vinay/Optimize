@@ -14,8 +14,7 @@ import {
 import styles from './style';
 
 export default class Login extends Component {
-
-	render() {
+  	render() {
 	    return (
 
 	    	<View style={styles.scrollv}>
@@ -27,12 +26,12 @@ export default class Login extends Component {
 					<View style={styles.imageContainer}>
 						<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
 					</View>
-					<TextBox placeholder = 'Email' secureTextEntry={false} showClearButton={true}></TextBox>
+					<TextBox placeholder = 'Email' secureTextEntry={false}></TextBox>
 					<View style={styles.remembermeTextWrap}>
 						<Text style={styles.rememberText}>Remember Email</Text>
 						<Ticker/>
 					</View>
-					<TextBox placeholder = 'Password' secureTextEntry={true} showClearButton={true}></TextBox>
+					<TextBox placeholder = 'Password' secureTextEntry={true}></TextBox>
 					<View style={styles.remembermeTextWrap}>
 						<Text style={styles.rememberText}>Remember Password</Text>
 						<Ticker/>
