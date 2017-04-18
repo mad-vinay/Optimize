@@ -47,5 +47,33 @@ export default StyleSheet.create({
         justifyContent: 'flex-start',
         flexDirection: 'row',
         height: 90
+    },
+    imageStyle: {
+        width: 12,
+        height: 12
+    },
+    dropdownStyle: {
+        width: 500,
+    },
+    textStyle: {
+        color: '#fff',
+        fontSize: 10,
+        height: 36,
+        marginTop: 10,
+        backgroundColor: 'transparent',
+    },
+    caseTypeField: {
+        paddingLeft: 10,
+        borderRadius: 0,
+        borderColor: '#303B3D',
+        borderBottomColor: '#46575a',
+        borderWidth: 1,
+        backgroundColor: 'transparent',
+        height: 36
+    },
+    dropdownStyle: {
+        backgroundColor: 'red',
+        width: 230,
+        height: 106,
     }
 });
