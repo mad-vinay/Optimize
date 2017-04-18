@@ -27,7 +27,7 @@ export default StyleSheet.create({
     },
     clearBtn: {
         position: 'absolute',
-        right: 5,
+        right: 10,
         top: 11,
     },
 });
