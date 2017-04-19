@@ -20,7 +20,6 @@ export default class TouchableHighlightBtn extends Component {
         this.setState({
             buttonTextColor: '#ff9f02',
         })
-        this.props.onPress && this.props.onPress();
     };
     onPress = (id) => {
         this.setState({
