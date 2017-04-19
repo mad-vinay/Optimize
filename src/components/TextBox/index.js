@@ -20,20 +20,21 @@ export default class TextBox extends Component {
     };
   }
 
-   clearText() {
+  clearText() {
     this.refs['textInput'].setNativeProps({text: ''});
     this.setState({text: ''})
   }
 
-handle(){
-        if(this.state.text.length>0){
-           this.state.showClearButton= true
-        }
-        else
-        {
-          this.state.showClearButton= false
-        }
-}
+  handle(){
+    if(this.state.text.length>0){
+       this.state.showClearButton= true
+    }
+    else
+    {
+      this.state.showClearButton= false
+    }
+  }
+  
   render() {
     return (
       <View style={[ this.props.noDefaultStyles ? '' : styles.loginform,
