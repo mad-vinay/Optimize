@@ -17,8 +17,8 @@ export default class SetInfo extends Component {
        <View style={styles.wrapper}>
           <NavBar styles={styles.navWrapper}>
             <TouchableOpacityBtn
-              navigator={this.props.navigator}
-              onPress = { this.onPress } id='MainCategory'
+              navigator={this.props.navigation}
+              onPress = { this.onPress } screen='MainCategory'
               styles={styles.logoutButton}
               label="< Back"/>
             <Text style={styles.headingText} >Set Info</Text>

@@ -36,7 +36,7 @@ export default class Login extends Component {
 						<Text style={styles.rememberText}>Remember Password</Text>
 						<Ticker/>
 					</View>
-					<TouchableHighlightBtn styles={styles.transparentButton} navigator={this.props.navigator} id='MainCategory'>
+					<TouchableHighlightBtn styles={styles.transparentButton} navigator={this.props.navigation} screen='MainCategory'>
 						<Text style={styles.buttonText}>Login</Text>
 					</TouchableHighlightBtn>
 		        </View>

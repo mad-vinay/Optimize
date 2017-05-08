@@ -43,7 +43,7 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginTop: 10,
-        marginBottom: 10,
+        marginBottom: 25,
     },
     header: {
         justifyContent: 'space-between',
