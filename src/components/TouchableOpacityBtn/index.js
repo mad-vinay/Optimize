@@ -11,9 +11,7 @@ export default class TouchableOpacityBtn extends Component {
     navigator = this.props.navigator;
 
     onPress = (id) => {
-        this.navigator.push({
-          id: this.props.id
-        });
+        this.props.navigator.navigate(this.props.screen);
     }
 
     getContent(){

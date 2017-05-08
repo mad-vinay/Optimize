@@ -4,57 +4,36 @@ import {
 	AppRegistry,
 	Navigator
 } from 'react-native';
-
+import {
+  StackNavigator,
+} from 'react-navigation';
 import Login from './src/pages/Login';
 import MainCategory from './src/pages/MainCategory';
 import ManageCase from './src/pages/ManageCase';
 import Preferences from './src/pages/Preferences';
 import SetInfo from './src/pages/SetInfo';
 import AddPreference from './src/pages/AddPreference';
+
+const OptimizeApp = StackNavigator({
+  Login: {screen: Login},
+  ManageCase: {screen: ManageCase},
+  MainCategory: {screen: MainCategory},
+  Preferences: {screen: Preferences},
+  SetInfo: {screen: SetInfo},
+  AddPreference: {screen: AddPreference}
+},
+{
+  initialRouteName: 'Login',
+  headerMode: 'none'
+});
+
 export default class Optimize extends Component {
-
-render() {
-
+  render() {
     return (
-      <Navigator
-        initialRoute={{ id: 'Login', name: 'Login' }}
-        renderScene={this.renderScene.bind(this)}
-        configureScene={(route, routeStack) => Navigator.SceneConfigs.FloatFromRight}
-      />
+      <OptimizeApp/>
     );
-  }
-  renderScene = (route, navigator) => {
-    if (route.id === 'Login') {
-      return (
-        <Login navigator={navigator}/>
-      );
-    }
-    else if (route.id === 'ManageCase') {
-      return (
-        <ManageCase navigator={navigator}/>
-      );
-    }
-    else if (route.id === 'MainCategory') {
-      return (
-        <MainCategory navigator={navigator}/>
-      );
-    }
-    else if (route.id === 'Preferences') {
-      return (
-        <Preferences navigator={navigator}/>
-      );
-    }
-    else if (route.id === 'SetInfo') {
-      return (
-        <SetInfo navigator={navigator}/>
-      );
-    }
-    else if (route.id === 'AddPreference') {
-      return (
-        <AddPreference navigator={navigator}/>
-      );
-    }
   }
 }
 
 AppRegistry.registerComponent('Optimize', () => Optimize);
+
