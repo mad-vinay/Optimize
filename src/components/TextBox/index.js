@@ -47,7 +47,10 @@ export default class TextBox extends Component {
           secureTextEntry={this.props.secureTextEntry}
           multiline={this.props.multiline}
           numberOfLines={this.props.numberOfLines}
-          onChangeText={(text) => this.setState({text})}
+          onChangeText={(text) => {
+            this.props.onChangeText(text);
+            this.setState({text});
+          }}
           onChange= {this.handle()}
           ref={'textInput'}/>
             { this.state.showClearButton &&
