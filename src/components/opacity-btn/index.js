@@ -10,10 +10,9 @@ import styles from './style';
 export default class OpacityBtn extends Component {
     navigator = this.props.navigator;
 
-    onPress = (id) => {
-        this.navigator.push({
-          id: this.props.id
-        });
+    onPress = () => {
+
+        this.props.navigator.navigate(this.props.screen);
     }
 
     getContent(){

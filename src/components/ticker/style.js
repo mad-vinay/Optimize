@@ -5,8 +5,8 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     tickImg: {
-        width: 15,
-        height: 15,
+        width: 19,
+        height: 19,
         marginRight: 10,
         padding:5,
     },

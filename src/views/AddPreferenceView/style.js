@@ -38,11 +38,11 @@ export default StyleSheet.create({
         borderWidth: 1,
     },
     textInputStyle: {
-        fontSize: 10,
+        fontSize: 15,
         height: 36
     },
     InputStyle: {
-        fontSize: 10,
+        fontSize: 15,
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
         flexDirection: 'row',
@@ -57,9 +57,9 @@ export default StyleSheet.create({
     },
     textStyle: {
         color: '#fff',
-        fontSize: 10,
+        fontSize: 15,
         height: 36,
-        marginTop: 10,
+        marginTop: 7,
         backgroundColor: 'transparent',
     },
     caseTypeField: {
@@ -72,7 +72,6 @@ export default StyleSheet.create({
         height: 36
     },
     dropdownStyle: {
-        backgroundColor: 'red',
         width: 230,
         height: 106,
     }

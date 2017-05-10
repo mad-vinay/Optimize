@@ -9,7 +9,6 @@ import { Text, TouchableHighlight } from 'react-native';
 import styles from './style';
 
 export default class HighlightBtn extends Component {
-    navigator = this.props.navigator;
     constructor(props) {
         super(props);
         this.state = {
@@ -17,19 +16,12 @@ export default class HighlightBtn extends Component {
         }
     }
 
-    btnPress = () => {
-        this.setState({
-            buttonTextColor: '#ff9f02',
-        })
-    };
-    onPress = (id) => {
+    onPress = () => {
         this.setState({
             buttonTextColor: '#ff9f02',
         })
 
-        this.navigator.push({
-          id: this.props.id
-        });
+        this.props.navigator.navigate(this.props.screen);
     }
 
     getContent(){

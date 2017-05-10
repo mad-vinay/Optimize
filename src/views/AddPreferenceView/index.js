@@ -19,8 +19,8 @@ export default class AddPreference extends Component {
         <View style={styles.wrapper}>
           <NavBar styles={styles.navWrapper}>
             <TouchableOpacityBtn
-              navigator={this.props.navigator}
-              onPress = { this.onPress } id='MainCategory'
+               navigator={this.props.navigation} screen='MainCategory'
+              onPress = { this.onPress }
               styles={styles.logoutButton}
               label="< Back"/>
             <Text style={styles.headingText} >Add Preferences</Text>
@@ -32,6 +32,7 @@ export default class AddPreference extends Component {
               styles={styles.addPreferenceField}
               placeholder='Preference Name'
               secureTextEntry={false}
+              imageStyle = {styles.imageStyle}
               showClearButton={false}>
             </TextBox>
 

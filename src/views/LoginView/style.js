@@ -12,10 +12,12 @@ export default StyleSheet.create({
         width: WIDTH
     },
     transparentButton: {
-        marginTop: 30,
         borderColor: '#ff9f02',
         borderWidth: 1,
-        borderRadius: 5
+        borderRadius: 5,
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: 50
     },
     buttonText: {
         fontSize: 20,
@@ -42,11 +44,18 @@ export default StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: 10,
-        marginBottom: 10,
+        marginBottom: 25,
     },
     header: {
         justifyContent: 'space-between',
     },
+    emailInput: {
+        
+    },
+    errMsg: {
+        color: 'red',
+        marginBottom: 25,
+        marginTop: 5,
+    }
 });
 

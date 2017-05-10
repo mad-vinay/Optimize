@@ -17,9 +17,9 @@ export default class ManageCase extends Component {
         return (
         <View style={styles.wrapper}>
           <NavBar styles={styles.navWrapper}>
-              <TouchableOpacityBtn navigator={this.props.navigator} onPress = { this.onPress } id='MainCategory' label="< Back"/>
+              <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='MainCategory' label="< Back"/>
               <Text style={styles.headingText} >Manage Case</Text>
-              <TouchableOpacityBtn navigator={this.props.navigator} onPress = { this.onPress } id='Login' label="Logout"/>
+              <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='Login' label="Logout"/>
           </NavBar>
           <Calender/>
         </View>
