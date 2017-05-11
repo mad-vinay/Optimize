@@ -11,7 +11,7 @@ import Login from './src/views/LoginView';
 import MainCategory from './src/views/MainCategoryView';
 import ManageCase from './src/views/ManageCaseView';
 import Preferences from './src/views/PreferencesView';
-import SetInfo from './src/views/SetInfoView';
+import SetInfo from './src/views/OfficeCareView';
 import AddPreference from './src/views/AddPreferenceView';
 
 const OptimizeApp = StackNavigator({
@@ -23,7 +23,7 @@ const OptimizeApp = StackNavigator({
   AddPreference: {screen: AddPreference}
 },
 {
-  initialRouteName: 'Login',
+  initialRouteName: 'SetInfo',
   headerMode: 'none'
 });
 

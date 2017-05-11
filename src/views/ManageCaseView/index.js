@@ -21,7 +21,7 @@ export default class ManageCase extends Component {
               <Text style={styles.headingText} >Manage Case</Text>
               <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='Login' label="Logout"/>
           </NavBar>
-          <Calender/>
+          <Calender navigator={this.props.navigation} screen='Login'/>
         </View>
         );
     }
