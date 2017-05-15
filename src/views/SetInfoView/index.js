@@ -28,6 +28,8 @@ export default class SetInfo extends Component {
               <TouchableHighlightBtn
                   styles={styles.transparentButton}
                   label="Office Sets"
+                  navigator={this.props.navigation}
+                  onPress = { this.onPress } screen='OfficeSets'
               />
             </Container>
             <Container>

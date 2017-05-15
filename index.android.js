@@ -15,27 +15,27 @@ import ManageCase from './src/views/ManageCaseView';
 import Preferences from './src/views/PreferencesView';
 import SetInfo from './src/views/OfficeCareView';
 import AddPreference from './src/views/AddPreferenceView';
+import OfficeSets from './src/views/OfficeSetsView';
+
 
 const OptimizeApp = StackNavigator({
-  Login: {screen: Login},
-  ManageCase: {screen: ManageCase},
-  MainCategory: {screen: MainCategory},
-  Preferences: {screen: Preferences},
-  SetInfo: {screen: SetInfo},
-  AddPreference: {screen: AddPreference},
-  Teams: {screen: Teams},
-},
-{
-  initialRouteName: 'SetInfo',
-  headerMode: 'none'
+    Login: { screen: Login },
+    ManageCase: { screen: ManageCase },
+    MainCategory: { screen: MainCategory },
+    Preferences: { screen: Preferences },
+    SetInfo: { screen: SetInfo },
+    AddPreference: { screen: AddPreference },
+    OfficeSets: { screen: OfficeSets },
+    Teams: { screen: Teams },
+}, {
+    initialRouteName: 'Login',
+    headerMode: 'none'
 });
 
 export default class Optimize extends Component {
-  render() {
-    return (
-      <OptimizeApp/>
-    );
-  }
+    render() {
+        return ( < OptimizeApp / > );
+    }
 
 }
 
