@@ -48,10 +48,10 @@ export default class TextBox extends Component {
           }}
           onChange= {this.handle()}
           ref={'textInput'}/>
-            { this.state.showClearButton &&
-              <TouchableOpacity style={styles.clearBtn} onPress={() => this.clearText()}>
-                <Image style={[styles.clearIcon,  this.props.imageStyle]} source={require('../../images/clear-icon.png')}/>
-              </TouchableOpacity>}
+          { this.state.showClearButton &&
+            <TouchableOpacity style={styles.clearBtn} onPress={() => this.clearText()}>
+              <Image style={[styles.clearIcon,  this.props.imageStyle]} source={require('../../images/clear-icon.png')}/>
+            </TouchableOpacity>}
       </View>
     );
   }

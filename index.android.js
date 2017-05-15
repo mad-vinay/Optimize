@@ -4,9 +4,11 @@
  * author: QBurst
  */
 import React, { Component } from 'react';
+
 import { AppRegistry } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
+import Teams from './src/pages/Teams';
 import Login from './src/views/LoginView';
 import MainCategory from './src/views/MainCategoryView';
 import ManageCase from './src/views/ManageCaseView';
@@ -20,7 +22,8 @@ const OptimizeApp = StackNavigator({
   MainCategory: {screen: MainCategory},
   Preferences: {screen: Preferences},
   SetInfo: {screen: SetInfo},
-  AddPreference: {screen: AddPreference}
+  AddPreference: {screen: AddPreference},
+  Teams: {screen: Teams},
 },
 {
   initialRouteName: 'Login',

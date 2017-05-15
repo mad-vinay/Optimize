@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "dev": "webpack-dev-server --hot --config webpack.config.js  --progress --colors"
   },
   "dependencies": {
     "react": "15.4.2",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
+    "file-loader": "^0.11.1",
     "jest": "19.0.2",
     "react-test-renderer": "15.4.2"
   },
