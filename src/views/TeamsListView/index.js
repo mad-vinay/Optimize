@@ -24,9 +24,7 @@ export default class Teams extends Component {
 		super();
 		this.state = {teams: ''};
 	}
-	updateLanguage = (name) => {
-		this.setState({teams: name});
-	}
+
     render() {
         return (
         <View style={styles.wrapper}>
@@ -49,7 +47,7 @@ export default class Teams extends Component {
 			    <View style={styles.pickerWrap}>
 					<Picker style={styles.picker} 
 					  selectedValue={this.state.teams}
-					  onValueChange={(name) => {console.log(name);this.setState({teams: name})}}>
+					  onValueChange={(name) => {this.setState({teams: name})}}>
 					  <Picker.Item label="Select Team" value="key0" />
 					  <Picker.Item label="TEAM A" value="a" />
 					  <Picker.Item label="TEAM B" value="b" />
