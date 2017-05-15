@@ -16,7 +16,8 @@ export default class extends Component {
                       prevButtonText = {'<'}
                       nextButtonText = {'>'}
                       showControls
-                      customStyle    = {styles}/>
+                      customStyle    = {styles}
+                      onDateSelect={(date) => this.props.dateSelect(date)}/>
         );
     }
 }

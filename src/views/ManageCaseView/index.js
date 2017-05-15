@@ -13,6 +13,9 @@ import {
 import styles from './style';
 
 export default class ManageCase extends Component {
+  dateSelect = (date) => {
+    this.props.navigation.navigate('CasesDayView', {selectedDate:date});
+  }
     render() {
         return (
         <View style={styles.wrapper}>
@@ -21,7 +24,7 @@ export default class ManageCase extends Component {
               <Text style={styles.headingText} >Manage Case</Text>
               <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='Login' label="Logout"/>
           </NavBar>
-          <Calender/>
+          <Calender dateSelect = {this.dateSelect}/>
         </View>
         );
     }

@@ -15,6 +15,7 @@ import ManageCase from './src/views/ManageCaseView';
 import Preferences from './src/views/PreferencesView';
 import SetInfo from './src/views/SetInfoView';
 import AddPreference from './src/views/AddPreferenceView';
+import CasesDayView from './src/views/CasesDayView';
 
 const OptimizeApp = StackNavigator({
   Login: {screen: Login},
@@ -24,6 +25,10 @@ const OptimizeApp = StackNavigator({
   SetInfo: {screen: SetInfo},
   AddPreference: {screen: AddPreference},
   Teams: {screen: Teams},
+  CasesDayView: {
+    screen: CasesDayView,
+    params: { selectedDate: '' }
+  }
 },
 {
   initialRouteName: 'Login',
