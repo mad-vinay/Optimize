@@ -85,6 +85,7 @@ export default class OfficeCareView extends Component {
         sectionListItem={SectionItem}
         sectionHeader={SectionHeader}
         sectionHeaderHeight={22.5}
+        enableEmptySections = {false}
       />
     );
   }

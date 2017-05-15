@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import Container from '../../components/wrapper';
-import TouchableHighlightBtn from '../../components/highlight-btn';
-import Ticker from '../../components/ticker';
-import NavBar from '../../components/navbar';
-import TextBox from '../../components/textbox';
+import Image from '../../coreComponents/Image';
+import View from '../../coreComponents/View';
+import Text from '../../coreComponents/Text';
+import InputField from '../../coreComponents/InputField';
 
-import {
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-  TouchableHighlight
-} from 'react-native';
 import styles from './style';
 
 export default class Login extends Component {
@@ -19,21 +11,39 @@ export default class Login extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-		  email: '',
-		  passwd:'',
-		  flag: true,
-	      emailText: "",
-	      passwordText: ""
+			email: '',
+			passwd:'',
+			flag: true,
+			emailText: "",
+			passwordText: "",
+			email: '',
+			selected: false
 		};
 	}
 
 	onClick = () => {
 		if (this.signUpValidation()) {
 			
-	   		this.props.navigation.navigate('MainCategory');
+	   		this.props.navigation.navigate('Teams');
 	    }
 	    else {
 	      return false;
+	    }
+	}
+
+	_onPressButton = () => {
+        this.setState({
+            selected: !this.state.selected,
+        })
+    };
+
+	handle = () => {
+	    if(this.state.email.length>0){
+	       this.state.showClearButton= true
+	    }
+	    else
+	    {
+	      this.state.showClearButton= false
 	    }
 	}
 
@@ -82,35 +92,39 @@ export default class Login extends Component {
 	}
 
   	render() {
+  		const imageUrl=this.state.selected==true? require('../../images/check-orange.png') :require('../../images/check.png')
 	    return (
-
-	    	<View>
-		    	<NavBar style={styles.header}>
-	        		<Text style={styles.headerText}>v3.4</Text>
-		    		<Text style={styles.headerText}>T000v34-DFW1</Text>
-			    </NavBar>
-		        <View style={styles.scroll}>
+	        <View style={styles.loginWrapper}>
+	        	<View style={styles.navContainer}>
+	        		<Text style={styles.containerText}>v3.4</Text>
+	        		<Text style={styles.containerText}>T000v34-DFW1</Text>
+	        	</View>
+	        	<View style={styles.container}>
 					<View style={styles.imageContainer}>
 						<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
 					</View>
-					<TextBox placeholder = 'Email' secureTextEntry={false} onChangeText={(email) => this.setState({email})}
-						styles={styles.emailInput}></TextBox>
+					<InputField style={styles.InputField} placeholderTextColor='#fff' placeholder = 'Email' secureTextEntry={false} onChangeText={(email) => this.setState({email})}></InputField>
 					<View>
 						<Text style={styles.errMsg}>{this.state.emailText}</Text>
 					</View>
-					<TextBox placeholder = 'Password' secureTextEntry={true} onChangeText={(passwd) => this.setState({passwd})}></TextBox>
+					<InputField style={styles.InputField} placeholderTextColor='#fff' placeholder = 'Password' secureTextEntry={true} onChangeText={(passwd) => this.setState({passwd})}></InputField>
 					<View>
 						<Text style={styles.errMsg}>{this.state.passwdText}</Text>
 					</View>
 					<View style={styles.remembermeTextWrap}>
 						<Text style={styles.rememberText}>Remember me</Text>
-						<Ticker/>
+						<View onClick={this._onPressButton} style={styles.tickerWrap}>
+					      <Image
+					      	style={styles.tickImg}
+					        source={imageUrl}
+					      />
+					    </View>
 					</View>
-					<TouchableHighlight style={styles.transparentButton} onPress = { this.onClick }>
+					<View style={styles.transparentButton} onClick = { this.onClick }>
 						<Text style={styles.buttonText}>Login</Text>
-					</TouchableHighlight>
-		        </View>
-		    </View>
+					</View>
+				</View>
+	        </View>
 	    );
 	}
 }
