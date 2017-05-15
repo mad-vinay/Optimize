@@ -8,7 +8,6 @@ import {
 import styles from './style';
 
 export default class TouchableOpacityBtn extends Component {
-    navigator = this.props.navigator;
 
     onPress = () => {
 

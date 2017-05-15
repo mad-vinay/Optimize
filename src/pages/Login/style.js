@@ -1,15 +1,15 @@
-import { StyleSheet, Dimensions } from 'react-native';
-const HEIGHT = Dimensions.get('window').height;
-const WIDTH = Dimensions.get('window').width;
 
-export default StyleSheet.create({
-    scroll: {
+
+export default ({
+    loginWrapper: {
         backgroundColor: '#303B3D',
-        padding: 50,
-        flexDirection: 'column',
-        height: HEIGHT-60,
+        flex:1,
+        alignItems: 'center',
         justifyContent: 'center',
-        width: WIDTH
+    },
+    container: {
+        width: 250,
+        flexDirection: 'column',
     },
     transparentButton: {
         borderColor: '#ff9f02',
@@ -17,19 +17,25 @@ export default StyleSheet.create({
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
-        height: 50
+        height: 50,
+        borderStyle: 'solid',
     },
     buttonText: {
         fontSize: 20,
-        color: '#fff'
+        color: '#fff',
     },
     logo: {
         width: 200,
-        height: 50
+        height: 50,
+        alignItems: 'center',
+        marginBottom: 30,
+        justifyContent: 'center',
     },
     imageContainer: {
         alignItems: 'center',
-        marginBottom: 30
+        marginBottom: 15,
+        justifyContent: 'center',
+        width: 250,
     },
     rememberText: {
         color: '#ccc',
@@ -45,17 +51,49 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 25,
+        width: 250,
     },
     header: {
         justifyContent: 'space-between',
     },
-    emailInput: {
-        
-    },
     errMsg: {
-        color: 'red',
+        color: '#e64545',
         marginBottom: 25,
         marginTop: 5,
+    },
+    InputField: {
+        borderColor: '#748d92',
+        borderRadius: 5,
+        borderWidth: 1,
+        height: 40,
+        color: '#fff',
+        borderStyle: 'solid',
+        backgroundColor: '#303B3D',
+        paddingLeft: 5,
+    },
+    navContainer: {
+        position: 'absolute',
+        top: 0,
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        borderBottomColor: '#46575a',
+        borderStyle: 'solid',
+        borderWidth: 1,
+    },
+    containerText: {
+        color: '#fff',
+        padding: 14,
+        fontSize: 13,
+    },
+    tickImg: {
+        width: 20,
+        height: 20,
+        marginRight: 10,
+        padding: 5,
+    },
+    tickerWrap: {
+        justifyContent: 'flex-end',
+        width: 50
     }
 });
 
