@@ -8,12 +8,12 @@ import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
+import Teams from './src/views/TeamsListView';
 import Login from './src/views/LoginView';
-import Teams from './src/views/TeamsView';
 import MainCategory from './src/views/MainCategoryView';
 import ManageCase from './src/views/ManageCaseView';
 import Preferences from './src/views/PreferencesView';
-import SetInfo from './src/views/SetInfoView';
+import SetInfo from './src/views/OfficeCareView';
 import AddPreference from './src/views/AddPreferenceView';
 import OfficeSets from './src/views/OfficeSetsView';
 

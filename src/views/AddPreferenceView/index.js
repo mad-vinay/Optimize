@@ -5,10 +5,7 @@ import TouchableOpacityBtn from '../../components/opacity-btn';
 import TextBox from '../../components/textbox';
 import Ticker from '../../components/ticker';
 import ModalDropdown from 'react-native-modal-dropdown';
-import {
-  StyleSheet,
-  View,
-  Text,
+import { View, Text,
   TextInput,
 } from 'react-native';
 import styles from './style';

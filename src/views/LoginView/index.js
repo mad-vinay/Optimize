@@ -31,22 +31,6 @@ export default class Login extends Component {
 	    }
 	}
 
-	_onPressButton = () => {
-        this.setState({
-            selected: !this.state.selected,
-        })
-    };
-
-	handle = () => {
-	    if(this.state.email.length>0){
-	       this.state.showClearButton= true
-	    }
-	    else
-	    {
-	      this.state.showClearButton= false
-	    }
-	}
-
 	signUpValidation() {
 	    var emailFlag = "";
 	    var passFlag = "";
