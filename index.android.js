@@ -13,6 +13,7 @@ import ManageCase from './src/views/ManageCaseView';
 import Preferences from './src/views/PreferencesView';
 import SetInfo from './src/views/SetInfoView';
 import AddPreference from './src/views/AddPreferenceView';
+import OfficeSets from './src/views/OfficeSetsView';
 
 const OptimizeApp = StackNavigator({
   Login: {screen: Login},
@@ -20,10 +21,11 @@ const OptimizeApp = StackNavigator({
   MainCategory: {screen: MainCategory},
   Preferences: {screen: Preferences},
   SetInfo: {screen: SetInfo},
-  AddPreference: {screen: AddPreference}
+  AddPreference: {screen: AddPreference},
+  OfficeSets: {screen: OfficeSets}
 },
 {
-  initialRouteName: 'Login',
+  initialRouteName: 'OfficeSets',
   headerMode: 'none'
 });
 
