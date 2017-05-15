@@ -1,20 +1,20 @@
+/**
+ * Optimize App
+ * https://github.com/vinayedadan/Optimize
+ * author: QBurst
+ */
 import React, { Component } from 'react';
-import {
-	StyleSheet,
-	AppRegistry,
-	Navigator
-} from 'react-native';
-import {
-  StackNavigator,
-} from 'react-navigation';
-import Login from './src/pages/Login';
-import MainCategory from './src/pages/MainCategory';
-import ManageCase from './src/pages/ManageCase';
-import Preferences from './src/pages/Preferences';
-import SetInfo from './src/pages/SetInfo';
-import AddPreference from './src/pages/AddPreference';
+
+import { AppRegistry } from 'react-native';
+import { StackNavigator } from 'react-navigation';
+
 import Teams from './src/pages/Teams';
-import TeamDetail from './src/pages/TeamDetail';
+import Login from './src/views/LoginView';
+import MainCategory from './src/views/MainCategoryView';
+import ManageCase from './src/views/ManageCaseView';
+import Preferences from './src/views/PreferencesView';
+import SetInfo from './src/views/SetInfoView';
+import AddPreference from './src/views/AddPreferenceView';
 
 const OptimizeApp = StackNavigator({
   Login: {screen: Login},
@@ -24,7 +24,6 @@ const OptimizeApp = StackNavigator({
   SetInfo: {screen: SetInfo},
   AddPreference: {screen: AddPreference},
   Teams: {screen: Teams},
-  TeamDetail: {screen: TeamDetail}
 },
 {
   initialRouteName: 'Login',
@@ -37,7 +36,7 @@ export default class Optimize extends Component {
       <OptimizeApp/>
     );
   }
+
 }
 
 AppRegistry.registerComponent('Optimize', () => Optimize);
-

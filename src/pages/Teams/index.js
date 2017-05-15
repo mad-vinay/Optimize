@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from '../../components/Container';
-import TouchableHighlightBtn from '../../components/TouchableHighlightBtn';
-import TouchableOpacityBtn from '../../components/TouchableOpacityBtn';
-import NavBar from '../../components/NavBar';
+import Container from '../../components/wrapper';
+import TouchableHighlightBtn from '../../components/highlight-btn';
+import TouchableOpacityBtn from '../../components/opacity-btn';
+import NavBar from '../../components/navbar';
 
 import {
   StyleSheet,
