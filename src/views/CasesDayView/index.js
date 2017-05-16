@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NavBar from '../../components/navbar';
 import TouchableOpacityBtn from '../../components/opacity-btn';
 import {
-  StyleSheet,
   Text,
   View,
   TextInput,
@@ -40,17 +39,25 @@ export default class CasesDayView extends Component {
       return (
       <View style={styles.wrapper}>
         <NavBar styles={styles.navWrapper}>
-            <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='ManageCase' label="< Back"/>
+            <TouchableOpacityBtn
+                navigator={this.props.navigation}
+                onPress = { this.onPress }
+                screen='ManageCase'
+                label="< Back"/>
             <Text style={styles.headingText} >Day View</Text>
-            <TouchableOpacityBtn navigator={this.props.navigation} onPress = { this.onPress } screen='Login' label="Logout"/>
+            <TouchableOpacityBtn
+                navigator={this.props.navigation}
+                onPress = { this.onPress }
+                screen='Login'
+                label="Logout"/>
         </NavBar>
         <DateSelect
             startDate= {state.params.selectedDate.split('T')[0]}
             onDateChange = {this.dateChange}
         />
         <ListView
-          dataSource = {this.state.dataSource}
-          renderRow = {this.renderRow}>
+            dataSource = {this.state.dataSource}
+            renderRow = {this.renderRow}>
         </ListView>
       </View>
       );
