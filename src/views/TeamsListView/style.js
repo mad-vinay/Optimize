@@ -13,6 +13,10 @@ export default StyleSheet.create({
         padding: 0,
         color: '#ff9f02'
     },
+    buttonText: {
+        fontSize: 12,
+        color: '#fff',
+    },
     logo: {
         width: 200,
         height: 50
