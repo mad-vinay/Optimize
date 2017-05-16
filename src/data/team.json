@@ -1,17 +1,12 @@
 
+
 {
-    "team":[{
-        "teamA": {
-            "description": "VINAY",
-            "type": "A"
-        },
-        "teamB": {
-            "description": "DAN",
-            "type": "B"
-        },
-        "teamC": {
-            "description": "ANOOP",
-            "type": "C"
-        }
-    }]
+
+    "teamName": [
+        "alpha",
+        "beta",
+        "gama"
+    ]
+
 }
+

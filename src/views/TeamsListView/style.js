@@ -7,12 +7,6 @@ export default StyleSheet.create({
         backgroundColor: '#303B3D',
         flexDirection: 'column',
     },
-    transparentButton: {
-        borderColor: '#ff9f02',
-        borderWidth: 1,
-        borderRadius: 5,
-        height: 45
-    },
     logoutButton: {
         borderWidth: 0,
         margin: 0,
@@ -29,14 +23,13 @@ export default StyleSheet.create({
     },
     imageContainer: {
         alignItems: 'center',
-        marginBottom: 30,
+        marginTop: 30,
     },
     imageWrapper: {
         justifyContent: 'center',
         padding: 50,
         height: HEIGHT,
-        paddingTop: 0,
-
+        paddingTop: 10,
     },
     navWrapper: {
         justifyContent: 'flex-end',
@@ -56,23 +49,9 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         height: 50,
-        marginTop: 40
+        marginTop: 40,
     },
-    buttonText: {
-        fontSize: 20,
+    textStyle: {
         color: '#fff'
     },
-    picker: {
-        backgroundColor: '#fff',
-    },
-    arrow: {
-        position: 'absolute',
-        width: 20,
-        right: 10,
-        height: 20,
-        top: 15
-    },
-    pickerWrap: {
-        position: 'relative',
-    }
 });
