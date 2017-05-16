@@ -32,7 +32,7 @@ const OptimizeApp = StackNavigator({
       params: { selectedDate: '' }
     }
 }, {
-    initialRouteName: 'Login',
+    initialRouteName: 'Teams',
     headerMode: 'none'
 });
 

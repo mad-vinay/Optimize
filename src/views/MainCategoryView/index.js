@@ -11,9 +11,10 @@ import {
   TextInput,
   ScrollView,
   Image,
+  ListView,
 } from 'react-native';
 import styles from './style';
-
+import team from '../../data/team.json'
 export default class MainCategory extends Component {
     render() {
         return (
@@ -72,3 +73,7 @@ export default class MainCategory extends Component {
         );
     }
 }
+
+
+
+

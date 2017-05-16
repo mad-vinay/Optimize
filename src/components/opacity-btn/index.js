@@ -8,7 +8,6 @@ import { Text, TouchableOpacity } from 'react-native';
 import styles from './style';
 
 export default class OpacityBtn extends Component {
-    navigator = this.props.navigator;
 
     onPress = () => {
 
