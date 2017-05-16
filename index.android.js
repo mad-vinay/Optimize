@@ -28,7 +28,7 @@ const OptimizeApp = StackNavigator({
     OfficeSets: { screen: OfficeSets },
     Teams: { screen: Teams },
 }, {
-    initialRouteName: 'Login',
+    initialRouteName: 'Teams',
     headerMode: 'none'
 });
 
