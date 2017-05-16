@@ -44,7 +44,7 @@ export default StyleSheet.create({
     headingText: {
         color: "#fff",
         position: 'absolute',
-        left: WIDTH/2-38,
+        left: WIDTH / 2 - 38,
         right: 0,
         justifyContent: 'center',
         alignItems: 'center'
