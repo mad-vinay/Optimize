@@ -13,25 +13,25 @@ import {
   ListView
 } from 'react-native';
 import styles from './style';
-import team from '../../data/team.json';
+import app from '../../data/app.json';
 export default class Teams extends Component {
 
 
-	onClick = () => {	
-	   	this.props.navigation.navigate('MainCategory');
+	onClicked = (name) => {	
+	   	this.props.navigation.navigate('MainCategory', {name:name});
 	}
 
 	constructor(props) {
 	    super(props);
 	    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 	    this.state = {
-	     dataSource: ds.cloneWithRows(team.teamName),
+	     dataSource: ds.cloneWithRows(app.teamName),
 	    };
 	}
 	renderRow = (name) => {
 	    return (
-	    	<View>
-				<TouchableHighlight style={styles.transparentButton} navigator={this.props.navigation}  onPress = { this.onClick }>
+	    	<View style={styles.btnWrapper}>
+				<TouchableHighlight style={styles.transparentButton} navigator={this.props.navigation} onPress = { () => this.onClicked(name) }>
 					<Text style={styles.textStyle}>{name}</Text>
 				</TouchableHighlight>
 			</View>

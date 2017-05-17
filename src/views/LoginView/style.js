@@ -17,7 +17,7 @@ export default ({
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
-        height: 50,
+        height: 45,
         borderStyle: 'solid',
     },
     buttonText: {

@@ -6,6 +6,8 @@ export default StyleSheet.create({
     wrapper: {
         backgroundColor: '#303B3D',
         flexDirection: 'column',
+        height: HEIGHT,
+        flex: 1,
     },
     logoutButton: {
         borderWidth: 0,
@@ -28,7 +30,6 @@ export default StyleSheet.create({
     imageWrapper: {
         justifyContent: 'center',
         padding: 50,
-        height: HEIGHT,
         paddingTop: 10,
     },
     navWrapper: {
@@ -37,10 +38,9 @@ export default StyleSheet.create({
     headingText: {
         color: "#fff",
         position: 'absolute',
-        left: WIDTH / 2 - 38,
-        right: 0,
+        left: WIDTH / 2 - 45,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     transparentButton: {
         borderColor: '#ff9f02',
@@ -48,10 +48,13 @@ export default StyleSheet.create({
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
-        height: 50,
+        height: 45,
         marginTop: 40,
     },
     textStyle: {
         color: '#fff'
     },
+    btnWrapper: {
+      justifyContent: 'center',  
+    }
 });
