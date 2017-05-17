@@ -27,10 +27,7 @@ const OptimizeApp = StackNavigator({
     AddPreference: { screen: AddPreference },
     OfficeSets: { screen: OfficeSets },
     Teams: { screen: Teams },
-    CasesDayView: {
-      screen: CasesDayView,
-      params: { selectedDate: '' }
-    }
+    CasesDayView: { screen: CasesDayView}
 }, {
     initialRouteName: 'Teams',
     headerMode: 'none'

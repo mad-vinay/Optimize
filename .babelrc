@@ -1,7 +1,6 @@
 {
-"presets": ["react-native",
-            "react",
-            "es2016",
-            "stage-1"
-           ]
+"presets": ["react-native",'react',
+                    'es2016',
+                    'stage-1',]
+
 }
