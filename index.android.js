@@ -16,7 +16,7 @@ import Preferences from './src/views/PreferencesView';
 import SetInfo from './src/views/OfficeCareView';
 import AddPreference from './src/views/AddPreferenceView';
 import OfficeSets from './src/views/OfficeSetsView';
-
+import CasesDayView from './src/views/CasesDayView';
 
 const OptimizeApp = StackNavigator({
     Login: { screen: Login },
@@ -27,8 +27,9 @@ const OptimizeApp = StackNavigator({
     AddPreference: { screen: AddPreference },
     OfficeSets: { screen: OfficeSets },
     Teams: { screen: Teams },
+    CasesDayView: { screen: CasesDayView}
 }, {
-    initialRouteName: 'Teams',
+    initialRouteName: 'Login',
     headerMode: 'none'
 });
 

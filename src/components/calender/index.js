@@ -24,7 +24,8 @@ constructor(props) {
                       prevButtonText = {'<'}
                       nextButtonText = {'>'}
                       showControls
-                      customStyle    = {styles} onDateSelect={(date) => this.onDateSelect(date)} />
+                      customStyle    = {styles}
+                      onDateSelect={(date) => this.props.dateSelect(date)}/>
         );
     }
 }
