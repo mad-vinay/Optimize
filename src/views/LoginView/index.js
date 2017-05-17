@@ -31,6 +31,12 @@ export default class Login extends Component {
 	    }
 	}
 
+	 _onPressButton = () => {
+        this.setState({
+            selected: !this.state.selected,
+        })
+    };
+
 	signUpValidation() {
 	    var emailFlag = "";
 	    var passFlag = "";

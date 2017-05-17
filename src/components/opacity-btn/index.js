@@ -25,9 +25,6 @@ export default class OpacityBtn extends Component {
         return (
             <TouchableOpacity
                 onPress={this.onPress}
-                style={[
-                    this.props.noDefaultStyles ? '' : styles.button,
-                    this.props.styles ? this.props.styles : '']}
             >
                 { this.getContent() }
             </TouchableOpacity>

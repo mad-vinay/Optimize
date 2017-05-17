@@ -14,7 +14,6 @@ import {
   ListView,
 } from 'react-native';
 import styles from './style';
-import team from '../../data/team.json'
 export default class MainCategory extends Component {
     render() {
         return (
@@ -26,6 +25,7 @@ export default class MainCategory extends Component {
         			textColor='#ff9f02'
         			styles={styles.logoutButton}
         			label="Logout"/>
+        			<Text style={styles.headingText}>{this.props.navigation.state.params.name}</Text>
 		    </NavBar>
 		    <View style={styles.imageWrapper}>
 		        <View style={styles.imageContainer}>

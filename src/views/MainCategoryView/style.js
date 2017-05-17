@@ -1,5 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 const HEIGHT = Dimensions.get('window').height;
+const WIDTH = Dimensions.get('window').width;
 
 export default StyleSheet.create({
     wrapper: {
@@ -39,5 +40,12 @@ export default StyleSheet.create({
     },
     navWrapper: {
         justifyContent: 'flex-end',
+    },
+    headingText: {
+        color: "#fff",
+        position: 'absolute',
+        left: WIDTH / 2 - 24,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
