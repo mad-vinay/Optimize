@@ -15,7 +15,9 @@
     "react-native-modal-dropdown": "^0.4.2",
     "react-native-selectme": "^1.2.3",
     "react-native-touchable-set-active": "0.0.5",
-    "react-navigation": "^1.0.0-beta.9"
+    "react-navigation": "^1.0.0-beta.9",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
