@@ -36,6 +36,9 @@ module.exports = {
     path: __dirname + "/dist",
     filename: 'bundle.js',
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
 	  new HtmlWebpackPlugin({
       template: './index.ejs',
