@@ -25,7 +25,7 @@ export default class Ticker extends Component {
 
     render(){
 
-    	const imageUrl=this.state.selected==true? require('../../images/check-orange.png') :require('../../images/check.png')
+    	const imageUrl=this.state.selected==true? require('../../../images/check-orange.png') :require('../../../images/check.png')
 
         return (
             <TouchableOpacity onPress={this._onPressButton}>

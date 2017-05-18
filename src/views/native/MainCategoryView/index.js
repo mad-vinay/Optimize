@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from '../../components/wrapper';
-import TouchableHighlightBtn from '../../components/highlight-btn';
-import TouchableOpacityBtn from '../../components/opacity-btn';
-import NavBar from '../../components/navbar';
+import Container from '../../../components/native/wrapper';
+import TouchableHighlightBtn from '../../../components/native/highlight-btn';
+import TouchableOpacityBtn from '../../../components/native/opacity-btn';
+import NavBar from '../../../components/native/navbar';
 
 import {
   StyleSheet,
@@ -31,7 +31,7 @@ export default class MainCategory extends Component {
 		        <View style={styles.imageContainer}>
 		        	<Image
 						style={styles.logo}
-						source={require('../../images/Optimize-logo.png')}
+						source={require('../../../images/Optimize-logo.png')}
 			        />
 			     </View>
 		        <Container>

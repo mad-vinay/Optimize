@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Container from '../../components/wrapper';
-import TouchableHighlightBtn from '../../components/highlight-btn';
-import TouchableOpacityBtn from '../../components/opacity-btn';
-import NavBar from '../../components/navbar';
+import Container from '../../../components/native/wrapper';
+import TouchableHighlightBtn from '../../../components/native/highlight-btn';
+import TouchableOpacityBtn from '../../../components/native/opacity-btn';
+import NavBar from '../../../components/native/navbar';
 
 import {
   StyleSheet,
@@ -13,11 +13,11 @@ import {
   ListView
 } from 'react-native';
 import styles from './style';
-import app from '../../data/app.json';
+import app from '../../../json/app.json';
 export default class Teams extends Component {
 
 
-	onClicked = (name) => {	
+	onClicked = (name) => {
 	   	this.props.navigation.navigate('MainCategory', {name:name});
 	}
 
@@ -43,9 +43,9 @@ export default class Teams extends Component {
 	        	<NavBar styles={styles.navWrapper}>
 	        		<TouchableOpacityBtn
 	        			navigator={this.props.navigation} screen='Login'
-	        			onPress = { this.onPress } 
-	        			textColor='#ff9f02' 
-	        			styles={styles.logoutButton} 
+	        			onPress = { this.onPress }
+	        			textColor='#ff9f02'
+	        			styles={styles.logoutButton}
 	        			label="Logout"/>
 	        			<Text style={styles.headingText} >Select Team</Text>
 			    </NavBar>
@@ -53,7 +53,7 @@ export default class Teams extends Component {
 			        <View style={styles.imageContainer}>
 			        	<Image
 							style={styles.logo}
-							source={require('../../images/Optimize-logo.png')}
+							source={require('../../../images/Optimize-logo.png')}
 				        />
 				     </View>
 				     <ListView
@@ -63,6 +63,6 @@ export default class Teams extends Component {
 				</View>
 	        </View>
         );
-    } 
+    }
 }
 

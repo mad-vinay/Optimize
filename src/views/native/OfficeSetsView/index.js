@@ -9,10 +9,12 @@ import {
   View,
 } from 'react-native';
 import styles from './style';
+import setInfo from '../../../json/setInfo.json';
 import AlphabetListView from 'react-native-alphabetlistview';
 
 class SectionHeader extends Component {
   render() {
+    // inline styles used for brevity, use a stylesheet when possible
     return (
       <View style={styles.sectionHeaderView}>
         <Text style={styles.sectionHeaderText}>{this.props.title}</Text>
@@ -46,10 +48,10 @@ export default class OfficeCareView extends Component {
 
     this.state = {
       data: {
-        A: ['Lavya','entries','are here'],
+        A: ['some','entries','are here'],
         B: ['some','entries','are here'],
         C: ['some','entries','are here'],
-        D: [],
+        D: ['some','entries','are here'],
         E: ['some','entries','are here'],
         F: ['some','entries','are here'],
         G: ['some','entries','are here'],
@@ -71,22 +73,22 @@ export default class OfficeCareView extends Component {
         W: ['some','entries','are here'],
         X: ['some','entries','are here'],
         Y: ['some','entries','are here'],
-        Z: [],
+        Z: ['some','entries','are here'],
       }
     };
   }
 
   render() {
     return (
-      <AlphabetListView style = {styles.AlphabetListViewBg}
+      <AlphabetListView style = {styles.alphabetListViewBg}
         data={this.state.data}
         cell={Cell}
         cellHeight={30}
         sectionListItem={SectionItem}
         sectionHeader={SectionHeader}
         sectionHeaderHeight={22.5}
-        enableEmptySections = {false}
       />
     );
   }
 }
+

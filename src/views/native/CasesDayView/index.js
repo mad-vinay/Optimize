@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from '../../components/navbar';
-import TouchableOpacityBtn from '../../components/opacity-btn';
+import NavBar from '../../../components/native/navbar';
+import TouchableOpacityBtn from '../../../components/native/opacity-btn';
 import {
   Text,
   View,
@@ -11,9 +11,9 @@ import {
 } from 'react-native';
 
 import styles from './style';
-import CaseView from '../../components/case-view';
-import DateSelect from '../../components/date-select';
-import cases from '../../json/cases.json'
+import CaseView from '../../../components/native/case-view';
+import DateSelect from '../../../components/native/date-select';
+import cases from '../../../json/cases.json'
 
 
 import moment from 'moment';

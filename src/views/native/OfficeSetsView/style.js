@@ -19,9 +19,9 @@ export default StyleSheet.create({
 
     sectionItemText: {
         color: SECTION_ITEM_COLOR,
-        fontSize: 10
+        fontSize: 12
     },
-    AlphabetListViewBg: {
+    alphabetListViewBg: {
         backgroundColor: BG_COLOR,
     },
     cellText: {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NavBar from '../../components/navbar';
-import Container from '../../components/wrapper';
-import TouchableOpacityBtn from '../../components/opacity-btn';
-import TextBox from '../../components/textbox';
-import Ticker from '../../components/ticker';
+import NavBar from '../../../components/native/navbar';
+import Container from '../../../components/native/wrapper';
+import TouchableOpacityBtn from '../../../components/native/opacity-btn';
+import TextBox from '../../../components/native/textbox';
+import Ticker from '../../../components/native/ticker';
 import ModalDropdown from 'react-native-modal-dropdown';
 import { View, Text,
   TextInput,

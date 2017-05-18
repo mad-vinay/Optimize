@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Image from '../../coreComponents/Image';
-import View from '../../coreComponents/View';
-import Text from '../../coreComponents/Text';
-import InputField from '../../coreComponents/InputField';
+import Image from '../../../components/shared/image';
+import View from '../../../components/shared/view';
+import Text from '../../../components/shared/text';
+import InputField from '../../../components/shared/input-field';
 
 import styles from './style';
 
@@ -23,7 +23,7 @@ export default class Login extends Component {
 
 	onClick = () => {
 		if (this.signUpValidation()) {
-			
+
 	   		this.props.navigation.navigate('Teams');
 	    }
 	    else {
@@ -42,11 +42,11 @@ export default class Login extends Component {
 	    var passFlag = "";
 	    var emailPattern = "";
 	    var passwdPattern = "";
-	    
+
 	    if(this.state.email.length==0) {
 	      this.setState({ emailText: "Email is a required feild"});
 	      emailFlag = false;
-	      
+
 	    }
 	    else {
 			const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -63,7 +63,7 @@ export default class Login extends Component {
 	    if(this.state.passwd.length==0) {
 	      this.setState({ passwdText: "Password is a required feild"});
 	      passFlag = false;
-	      
+
 	    }
 	    else {
 	    	const PASSWORD_REGEX = /^(?=.*[0-9])[a-zA-Z0-9!@#$%^&*]{1,16}$/;
@@ -82,7 +82,7 @@ export default class Login extends Component {
 	}
 
   	render() {
-  		const imageUrl=this.state.selected==true? require('../../images/check-orange.png') :require('../../images/check.png')
+  		const imageUrl=this.state.selected==true? require('../../../images/check-orange.png') :require('../../../images/check.png')
 	    return (
 	        <View style={styles.loginWrapper}>
 	        	<View style={styles.navContainer}>
@@ -91,7 +91,7 @@ export default class Login extends Component {
 	        	</View>
 	        	<View style={styles.container}>
 					<View style={styles.imageContainer}>
-						<Image style={styles.logo} source={require('../../images/Optimize-logo.png')}/>
+						<Image style={styles.logo} source={require('../../../images/Optimize-logo.png')}/>
 					</View>
 					<InputField style={styles.InputField} placeholderTextColor='#fff' placeholder = 'Email' secureTextEntry={false} onChangeText={(email) => this.setState({email})}></InputField>
 					<View>
