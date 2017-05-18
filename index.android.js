@@ -1,8 +1,8 @@
 /**
- * Optimize App
+ * Optimize App Entry for Android
  * https://github.com/vinayedadan/Optimize
  * author: QBurst
- */
+**/
 import React, { Component } from 'react';
 
 import { AppRegistry } from 'react-native';
