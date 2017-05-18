@@ -13,9 +13,8 @@ import {
   ListView
 } from 'react-native';
 import styles from './style';
-import app from '../../../json/app.json';
+import app from '../../../json/team.json';
 export default class Teams extends Component {
-
 
 	onClicked = (name) => {
 	   	this.props.navigation.navigate('MainCategory', {name:name});
