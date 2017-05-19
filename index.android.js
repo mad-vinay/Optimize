@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import Teams from './src/views/native/TeamsListView';
+import Teams from './src/views/shared/TeamsListView';
 import Login from './src/views/shared/LoginView';
 import MainCategory from './src/views/native/MainCategoryView';
 import ManageCase from './src/views/native/ManageCaseView';
