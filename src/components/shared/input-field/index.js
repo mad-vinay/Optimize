@@ -7,10 +7,6 @@ class InputField extends React.Component {
     styles: PropTypes.shape({}),
   };
 
-  setNativeProps(param){
-    this.__proto__.setNativeProps(param);
-  }
-
   render() {
     const options = this.props;
 

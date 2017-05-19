@@ -79,6 +79,7 @@ export default ({
         borderBottomColor: '#46575a',
         borderStyle: 'solid',
         borderWidth: 1,
+        backgroundColor: '#293334'
     },
     containerText: {
         color: '#fff',

@@ -31,7 +31,11 @@ export default class Login extends Component {
 	    }
 	}
 
-	 _onPressButton = () => {
+	clearText = () => {
+		this.refs['textInput'].setNativeProps({text: ''});
+	}
+
+	_onPressButton = () => {
         this.setState({
             selected: !this.state.selected,
         })
@@ -93,7 +97,7 @@ export default class Login extends Component {
 					<View style={styles.imageContainer}>
 						<Image style={styles.logo} source={require('../../../images/Optimize-logo.png')}/>
 					</View>
-					<InputField style={styles.InputField} placeholderTextColor='#fff' placeholder = 'Email' secureTextEntry={false} onChangeText={(email) => this.setState({email})}></InputField>
+					<InputField style={styles.InputField} placeholderTextColor='#fff' placeholder = 'Email' ref={'textInput'} secureTextEntry={false} onChangeText={(email) => this.setState({email})}></InputField>
 					<View>
 						<Text style={styles.errMsg}>{this.state.emailText}</Text>
 					</View>
