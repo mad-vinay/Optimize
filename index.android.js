@@ -29,7 +29,7 @@ const OptimizeApp = StackNavigator({
     Teams: { screen: Teams },
     CasesDayView: { screen: CasesDayView}
 }, {
-    initialRouteName: 'Login',
+    initialRouteName: 'Teams',
     headerMode: 'none'
 });
 
