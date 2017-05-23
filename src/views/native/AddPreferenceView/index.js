@@ -4,7 +4,6 @@ import Container from '../../../components/native/wrapper';
 import TouchableOpacityBtn from '../../../components/native/opacity-btn';
 import TextBox from '../../../components/native/textbox';
 import Ticker from '../../../components/native/ticker';
-
 import { View, Text,
   TextInput,
 } from 'react-native';
@@ -32,12 +31,6 @@ export default class AddPreference extends Component {
               imageStyle = {styles.imageStyle}
               showClearButton={false}>
             </TextBox>
-
-            <View style={styles.caseTypeField} >
-            <Text styles={styles.dropdownStyle}>HIP</Text>
-            <Text styles={styles.dropdownStyle}>SHOULDER</Text>
-            <Text styles={styles.dropdownStyle}>OTHER</Text>
-            </View>
 
             <TextBox
               imageStyle = {styles.imageStyle}

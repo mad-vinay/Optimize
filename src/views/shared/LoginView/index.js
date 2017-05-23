@@ -20,11 +20,18 @@ export default class Login extends Component {
 			selected: false
 		};
 	}
-
+	static contextTypes = {
+  		router: React.PropTypes.object.isRequired
+	}
 	onClick = () => {
 		if (this.signUpValidation()) {
+			if(React.View !== undefined){
+			this.props.navigation.navigate('Teams');
+			}
+			else {
 
-	   		this.props.navigation.navigate('Teams');
+							this.context.router.history.push('/teams');
+			}
 	    }
 	    else {
 	      return false;
