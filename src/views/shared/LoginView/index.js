@@ -21,20 +21,23 @@ export default class Login extends Component {
 		};
 	}
 
+	static contextTypes = {
+	 	router: React.PropTypes.object.isRequired
+	}
 	onClick = () => {
 		if (this.signUpValidation()) {
-
-	   		this.props.navigation.navigate('Teams');
-	    }
-	    else {
-	      return false;
-	    }
+			if(this.context.router !== undefined ){
+				this.context.router.history.push('/teams');
+			}
+			else {
+				this.props.navigation.navigate('Teams');
+			}
+		}
+		else {
+			return false;
+		}
 	}
-
-	clearText = () => {
-		this.refs['textInput'].setNativeProps({text: ''});
-	}
-
+	
 	_onPressButton = () => {
         this.setState({
             selected: !this.state.selected,

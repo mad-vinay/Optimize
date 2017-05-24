@@ -43,7 +43,6 @@ export default class TextBox extends Component {
           multiline={this.props.multiline}
           numberOfLines={this.props.numberOfLines}
           onChangeText={(text) => {
-            this.props.onChangeText(text);
             this.setState({text});
           }}
           onChange= {this.handle()}
