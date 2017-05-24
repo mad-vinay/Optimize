@@ -25,7 +25,7 @@ export default StyleSheet.create({
   },
   rowItem : {
     borderColor: WHITE,
-    borderWidth: 1,
+    borderWidth: .4,
     borderRadius: 1,
     paddingVertical: 2
   },

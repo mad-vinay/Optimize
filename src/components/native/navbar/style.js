@@ -12,7 +12,7 @@ export default StyleSheet.create({
 		justifyContent: 'space-between',
         alignItems: 'center',
         height: 40,
-        padding: 10,
+        padding: 15,
         backgroundColor: NAVBAR_BG,
         borderBottomColor: BORDER_COLOR,
         borderStyle: 'solid',

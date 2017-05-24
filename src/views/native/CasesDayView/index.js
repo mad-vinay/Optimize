@@ -26,9 +26,12 @@ export default class CasesDayView extends Component {
      dataSource: ds.cloneWithRows(cases),
     };
   }
+  goToCase = (caseData) => {
+    this.props.navigation.navigate('CaseDetailsView', {caseData: caseData});
+  }
   renderRow = (data) => {
     return (
-      <CaseView caseData = {data}/>
+      <CaseView caseData = {data} caseSelect ={ () =>this.goToCase({data})}/>
     );
   }
   dateChange = (newDate) => {

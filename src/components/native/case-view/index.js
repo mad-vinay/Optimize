@@ -5,7 +5,8 @@ import React, { Component } from 'react';
 
 import {
   View,
-  Text
+  Text,
+  TouchableWithoutFeedback
 } from 'react-native';
 
 import styles from './style';
@@ -28,6 +29,7 @@ export default class extends Component {
     }
     render(){
         return (
+          <TouchableWithoutFeedback onPress={this.props.caseSelect}>
           <View style={styles.caseWrap}>
             <View style={styles.detailsRow}>
               <Text style={styles.caseTime}>{this.props.caseData.time}</Text>
@@ -49,6 +51,7 @@ export default class extends Component {
                 </View>
             </View>
           </View>
+          </TouchableWithoutFeedback>
         );
     }
 }
