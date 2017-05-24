@@ -30,11 +30,7 @@ export default class Login extends Component {
 	      return false;
 	    }
 	}
-
-	clearText = () => {
-		this.refs['textInput'].setNativeProps({text: ''});
-	}
-
+	
 	_onPressButton = () => {
         this.setState({
             selected: !this.state.selected,

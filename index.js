@@ -11,6 +11,6 @@ import Teams from './src/views/shared/TeamsListView';
 
 ReactDOM.render(
   <Router>
-    <Route exact path="/" component={Teams} />
+    <Route exact path="/" component={Login} />
   </Router> , document.getElementById('content'));
 

@@ -23,7 +23,7 @@ export default class ManageCase extends Component {
               <TouchableOpacityBtn
                   navigator={this.props.navigation}
                   onPress = { this.onPress }
-                  screen='MainCategory'
+                  screen='Teams'
                   label="< Back"/>
               <Text style={styles.headingText} >Manage Case</Text>
               <TouchableOpacityBtn
